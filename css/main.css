@@ -1,0 +1,376 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.header {
+  background: #323232;
+  height: 63px; }
+  .header .hWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    position: relative; }
+    .header .hWrapper .hfirst {
+      margin-right: 35px; }
+    .header .hWrapper .hthird {
+      margin-left: 40px; }
+    .header .hWrapper .triangle {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 26px 46.5px 0 46.5px;
+      border-color: #323232 transparent transparent transparent;
+      position: absolute;
+      top: 63px;
+      left: 47.5%; }
+    .header .hWrapper .line1, .header .hWrapper .line2 {
+      height: 1px;
+      width: 43%;
+      background: #e4e9eb;
+      position: absolute; }
+    .header .hWrapper .line1 {
+      bottom: -11px;
+      left: 3%; }
+    .header .hWrapper .line2 {
+      bottom: -11px;
+      right: 3%; }
+    .header .hWrapper span {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 10px;
+      color: #fff;
+      text-transform: uppercase; }
+      .header .hWrapper span:nth-child(even) {
+        margin-left: 30px; }
+      .header .hWrapper span:hover {
+        color: #2eb398; }
+
+.portfolio {
+  height: 721px;
+  width: 780px;
+  margin: 0 auto; }
+  .portfolio .slides {
+    position: relative;
+    height: 100%; }
+    .portfolio .slides .row1 {
+      position: absolute;
+      left: 9.8%;
+      margin-top: 92px; }
+      .portfolio .slides .row1 img {
+        width: calc(84%/4);
+        margin-left: 4px; }
+        .portfolio .slides .row1 img:hover {
+          -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
+      .portfolio .slides .row1 .vLine1, .portfolio .slides .row1 .vLine2 {
+        width: 1px;
+        height: 50%;
+        position: absolute;
+        background: #e4e9eb;
+        top: 25%; }
+      .portfolio .slides .row1 .vLine1 {
+        left: -3%; }
+      .portfolio .slides .row1 .vLine2 {
+        right: 9%; }
+    .portfolio .slides .row2 {
+      position: absolute;
+      top: 30.6%; }
+      .portfolio .slides .row2 img {
+        width: 19.5%; }
+        .portfolio .slides .row2 img:hover {
+          -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
+    .portfolio .slides .row3 {
+      position: absolute;
+      left: 9.8%;
+      top: 49.3%; }
+      .portfolio .slides .row3 img {
+        width: calc(84%/4);
+        margin-left: 4px; }
+        .portfolio .slides .row3 img:hover {
+          -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
+      .portfolio .slides .row3 .vLine1, .portfolio .slides .row3 .vLine2 {
+        width: 1px;
+        height: 50%;
+        position: absolute;
+        background: #e4e9eb;
+        top: 25%; }
+      .portfolio .slides .row3 .vLine1 {
+        left: -3%; }
+      .portfolio .slides .row3 .vLine2 {
+        right: 9%; }
+
+.aboutMe {
+  background: #2eb398;
+  height: 340px;
+  position: relative; }
+  .aboutMe .line {
+    height: 1px;
+    width: 94%;
+    background: #e4e9eb;
+    position: absolute;
+    top: -11px;
+    left: 3%; }
+  .aboutMe .aWrapper {
+    height: 100%;
+    width: 780px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .aboutMe .aWrapper .photo {
+      -ms-flex-item-align: center;
+      align-self: center; }
+    .aboutMe .aWrapper .descr {
+      margin-left: 20px;
+      margin-top: 65px; }
+      .aboutMe .aWrapper .descr h1 {
+        color: #d7fcf5;
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        margin-bottom: 10px; }
+      .aboutMe .aWrapper .descr p {
+        color: #20816d;
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 23px; }
+      .aboutMe .aWrapper .descr span {
+        color: #d7fcf5;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 12px; }
+      .aboutMe .aWrapper .descr ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        margin-top: 42px; }
+        .aboutMe .aWrapper .descr ul a {
+          color: #15b19c;
+          text-align: center;
+          line-height: 25px; }
+          .aboutMe .aWrapper .descr ul a li {
+            width: 25px;
+            height: 25px;
+            background: #a4dbd4; }
+            .aboutMe .aWrapper .descr ul a li:hover {
+              background: #6ccbbe; }
+    .aboutMe .aWrapper .vLine1, .aboutMe .aWrapper .vLine2 {
+      width: 4px;
+      height: 90%;
+      position: relative;
+      background: #219d84;
+      top: 5%; }
+    .aboutMe .aWrapper .vLine1 {
+      left: -5%; }
+    .aboutMe .aWrapper .vLine2 {
+      right: -5%; }
+
+.git {
+  height: 564px;
+  background: #323232;
+  position: relative; }
+  .git .line1, .git .line2 {
+    height: 1px;
+    width: 94%;
+    background: #2b2b2b;
+    position: absolute; }
+  .git .line1 {
+    top: 2%;
+    right: 3%; }
+  .git .line2 {
+    bottom: 2%;
+    right: 3%; }
+  .git .gWrapper {
+    width: 780px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .git .gWrapper .fields {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
+      .git .gWrapper .fields h2 {
+        color: #e0e0e0;
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        margin-top: 67px;
+        margin-bottom: 10px; }
+      .git .gWrapper .fields p {
+        color: #bebebe;
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 23px; }
+      .git .gWrapper .fields .form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .git .gWrapper .fields .form input {
+          height: 38px;
+          padding-left: 15px;
+          background: #454545;
+          border: none;
+          margin-bottom: 16px; }
+          .git .gWrapper .fields .form input::-webkit-input-placeholder {
+            color: #bebebe;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 12px; }
+          .git .gWrapper .fields .form input:-ms-input-placeholder {
+            color: #bebebe;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 12px; }
+          .git .gWrapper .fields .form input::-ms-input-placeholder {
+            color: #bebebe;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 12px; }
+          .git .gWrapper .fields .form input::placeholder {
+            color: #bebebe;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 12px; }
+        .git .gWrapper .fields .form textarea {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          height: 150px;
+          padding-left: 15px;
+          padding-top: 15px;
+          background: #454545;
+          border: none;
+          resize: none; }
+          .git .gWrapper .fields .form textarea::-webkit-input-placeholder {
+            color: #bebebe;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 12px; }
+          .git .gWrapper .fields .form textarea:-ms-input-placeholder {
+            color: #bebebe;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 12px; }
+          .git .gWrapper .fields .form textarea::-ms-input-placeholder {
+            color: #bebebe;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 12px; }
+          .git .gWrapper .fields .form textarea::placeholder {
+            color: #bebebe;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 12px; }
+        .git .gWrapper .fields .form .send {
+          -ms-flex-item-align: end;
+          align-self: flex-end;
+          width: 90px;
+          height: 37px;
+          background: #2eb398;
+          color: #d7fcf5;
+          font-family: 'Lato', sans-serif;
+          font-weight: 700;
+          font-size: 12px;
+          margin-top: 16px;
+          border: none;
+          outline: none;
+          text-transform: uppercase; }
+    .git .gWrapper .contacts {
+      -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+      margin-top: 145px;
+      margin-left: 20px; }
+      .git .gWrapper .contacts p {
+        color: #bebebe;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 45px;
+        line-height: 2; }
+        .git .gWrapper .contacts p span {
+          color: #e0e0e0;
+          font-weight: 900; }
+      .git .gWrapper .contacts .info div {
+        color: #bebebe;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        margin-bottom: 11px; }
+        .git .gWrapper .contacts .info div .fas, .git .gWrapper .contacts .info div .far {
+          color: #2eb398;
+          margin-right: 19px;
+          font-size: 16px; }
+
+.footer {
+  height: 43px;
+  padding-left: 4%;
+  background: #222222;
+  color: #454545;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 43px; }
